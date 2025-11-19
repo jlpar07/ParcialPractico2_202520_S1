@@ -1,4 +1,4 @@
 # Parcial Práctico 2
 
-- Nombre:
-- código:
+- Nombre: Jose Luis Parra Fernandez
+- código: 202410271

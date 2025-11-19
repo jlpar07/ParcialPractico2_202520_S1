@@ -7,6 +7,6 @@ import { ActorModule } from '../actor/actor.module';
 @NgModule({
   declarations: [MovieListComponent, MovieDetailComponent],
   imports: [CommonModule, ActorModule],
-  exports: [MovieListComponent],
+  exports: [MovieListComponent, MovieDetailComponent],
 })
 export class MovieModule {}

@@ -7,6 +7,7 @@ import { ToastrModule } from 'ngx-toastr';
 import { HTTP_INTERCEPTORS } from '@angular/common/http';
 import { HttpErrorInterceptorService } from './interceptors/http-error-interceptor.service';
 import { MovieModule } from './movie/movie.module';
+import {  HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [App],
@@ -19,6 +20,7 @@ import { MovieModule } from './movie/movie.module';
       preventDuplicates: true,
     }),
     MovieModule,
+    HttpClientModule
   ],
   providers: [
     {
@@ -26,6 +28,7 @@ import { MovieModule } from './movie/movie.module';
       useClass: HttpErrorInterceptorService,
       multi: true,
     },
+    MovieModule
   ],
   bootstrap: [App],
 })
