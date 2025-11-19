@@ -4,9 +4,9 @@ import { MovieListComponent } from './movie/movie-list/movie-list.component';
 import { MovieDetailComponent } from './movie/movie-detail/movie-detail.component';
 
 const routes: Routes = [
-  {path: '', redirectTo: '/movies', pathMatch: 'full' },  //ruta por defecto
+  {path: '', redirectTo: 'movies', pathMatch: 'full' },  //ruta por defecto
   { path: 'movies', component: MovieListComponent },
-  { path: ':id', component: MovieDetailComponent }
+  { path: 'movies/:id', component: MovieDetailComponent }
 
 ];
 
